@@ -1,0 +1,426 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o (exit)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+LOAD ./main.o
+LOAD ./t6963c.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2658
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x0000008c     0x2000 ./main.o
+                0x0000088c                android
+                0x0000008c                mickey
+                0x0000108c                youtube
+                0x0000188c                pokemon
+                0x0000208c                . = ALIGN (0x2)
+                0x0000208c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000208c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000208c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000208c                __ctors_start = .
+ *(.ctors)
+                0x0000208c                __ctors_end = .
+                0x0000208c                __dtors_start = .
+ *(.dtors)
+                0x0000208c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000208c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x0000208c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000208c        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00002098       0x1a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00002098                __do_copy_data
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000020b2        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ *(.init9)
+ *(.text)
+ .text          0x000020ba        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x000020ba                __vector_22
+                0x000020ba                __vector_28
+                0x000020ba                __vector_1
+                0x000020ba                __vector_32
+                0x000020ba                __vector_34
+                0x000020ba                __vector_24
+                0x000020ba                __vector_12
+                0x000020ba                __bad_interrupt
+                0x000020ba                __vector_31
+                0x000020ba                __vector_3
+                0x000020ba                __vector_23
+                0x000020ba                __vector_30
+                0x000020ba                __vector_25
+                0x000020ba                __vector_11
+                0x000020ba                __vector_13
+                0x000020ba                __vector_17
+                0x000020ba                __vector_19
+                0x000020ba                __vector_27
+                0x000020ba                __vector_33
+                0x000020ba                __vector_4
+                0x000020ba                __vector_9
+                0x000020ba                __vector_2
+                0x000020ba                __vector_21
+                0x000020ba                __vector_15
+                0x000020ba                __vector_29
+                0x000020ba                __vector_26
+                0x000020ba                __vector_14
+                0x000020ba                __vector_10
+                0x000020ba                __vector_16
+                0x000020ba                __vector_18
+                0x000020ba                __vector_20
+ .text          0x000020be        0x0 ./main.o
+ .text          0x000020be        0x0 ./t6963c.o
+ .text          0x000020be        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                0x000020be                . = ALIGN (0x2)
+ *(.text.*)
+ .text.__vector_5
+                0x000020be       0x64 ./main.o
+                0x000020be                __vector_5
+ .text.__vector_6
+                0x00002122       0x64 ./main.o
+                0x00002122                __vector_6
+ .text.__vector_7
+                0x00002186       0x64 ./main.o
+                0x00002186                __vector_7
+ .text.__vector_8
+                0x000021ea       0x64 ./main.o
+                0x000021ea                __vector_8
+ .text.main     0x0000224e       0x86 ./main.o
+                0x0000224e                main
+ .text.delay    0x000022d4       0x24 ./t6963c.o
+                0x000022d4                delay
+ .text.GLCD_InitalizeInterface
+                0x000022f8       0x10 ./t6963c.o
+                0x000022f8                GLCD_InitalizeInterface
+ .text.GLCD_ChceckStatus
+                0x00002308       0x1a ./t6963c.o
+                0x00002308                GLCD_ChceckStatus
+ .text.GLCD_WriteCommand
+                0x00002322       0x28 ./t6963c.o
+                0x00002322                GLCD_WriteCommand
+ .text.GLCD_WriteData
+                0x0000234a       0x28 ./t6963c.o
+                0x0000234a                GLCD_WriteData
+ .text.GLCD_ReadData
+                0x00002372       0x28 ./t6963c.o
+                0x00002372                GLCD_ReadData
+ .text.GLCD_SetAddressPointer
+                0x0000239a       0x18 ./t6963c.o
+                0x0000239a                GLCD_SetAddressPointer
+ .text.GLCD_TextGoTo
+                0x000023b2       0x1a ./t6963c.o
+                0x000023b2                GLCD_TextGoTo
+ .text.GLCD_WriteDisplayData
+                0x000023cc        0xc ./t6963c.o
+                0x000023cc                GLCD_WriteDisplayData
+ .text.GLCD_SetPixel
+                0x000023d8       0x7a ./t6963c.o
+                0x000023d8                GLCD_SetPixel
+ .text.GLCD_DefineCharacter
+                0x00002452       0x40 ./t6963c.o
+                0x00002452                GLCD_DefineCharacter
+ .text.GLCD_WriteChar
+                0x00002492        0x8 ./t6963c.o
+                0x00002492                GLCD_WriteChar
+ .text.GLCD_WriteStringPgm
+                0x0000249a       0x1c ./t6963c.o
+                0x0000249a                GLCD_WriteStringPgm
+ .text.GLCD_WriteString
+                0x000024b6       0x1a ./t6963c.o
+                0x000024b6                GLCD_WriteString
+ .text.GLCD_ClearGraphic
+                0x000024d0       0x26 ./t6963c.o
+                0x000024d0                GLCD_ClearGraphic
+ .text.GLCD_ClearCG
+                0x000024f6       0x26 ./t6963c.o
+                0x000024f6                GLCD_ClearCG
+ .text.GLCD_ClearText
+                0x0000251c       0x26 ./t6963c.o
+                0x0000251c                GLCD_ClearText
+ .text.GLCD_GraphicGoTo
+                0x00002542       0x22 ./t6963c.o
+                0x00002542                GLCD_GraphicGoTo
+ .text.GLCD_Bitmap
+                0x00002564       0x6c ./t6963c.o
+                0x00002564                GLCD_Bitmap
+ .text.GLCD_Initalize
+                0x000025d0       0x84 ./t6963c.o
+                0x000025d0                GLCD_Initalize
+ .text.libgcc   0x00002654        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                0x00002654                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002654        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                0x00002654                exit
+                0x00002654                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002654        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002658                _etext = .
+
+.data           0x00800100       0x2e load address 0x00002658
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ .data          0x00800100       0x2d ./main.o
+ .data          0x0080012d        0x0 ./t6963c.o
+ .data          0x0080012d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080012e                . = ALIGN (0x2)
+ *fill*         0x0080012d        0x1 00
+                0x0080012e                _edata = .
+                0x0080012e                PROVIDE (__data_end, .)
+
+.bss            0x0080012e        0x0
+                0x0080012e                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080012e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ .bss           0x0080012e        0x0 ./main.o
+ .bss           0x0080012e        0x0 ./t6963c.o
+ .bss           0x0080012e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ *(.bss*)
+ *(COMMON)
+                0x0080012e                PROVIDE (__bss_end, .)
+                0x00002658                __data_load_start = LOADADDR (.data)
+                0x00002686                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080012e        0x0
+                0x0080012e                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080012e                PROVIDE (__noinit_end, .)
+                0x0080012e                _end = .
+                0x0080012e                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(EjemploBitmap.elf elf32-avr)
+LOAD linker stubs
